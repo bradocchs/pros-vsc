@@ -23,6 +23,7 @@ import { TextDecoder, TextEncoder } from "util";
 
 let analytics: Analytics;
 
+export const output = vscode.window.createOutputChannel("PROS Output");
 export function activate(context: vscode.ExtensionContext) {
   analytics = new Analytics(context);
 
